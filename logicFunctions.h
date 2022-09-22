@@ -1,26 +1,32 @@
+/*
+ * Author: CJ Wade
+ * 
+ * Purpose: Boolean logic operations
+*/
+
 # include <iostream>
 using namespace std;
 
-bool andGate(bool x, bool y){
+bool andLogic(bool x, bool y){
     return x && y;
 }
 
-bool orGate(bool x, bool y){
+bool orLogic(bool x, bool y){
 	return x || y;
 }
 
-bool xorGate(bool x, bool y){
+bool xorLogic(bool x, bool y){
     return x ^ y;
 }
 
-bool nandGate(bool x, bool y){
+bool nandLogic(bool x, bool y){
     return !(x && y);
 }
 
-bool norGate(bool x, bool y){
+bool norLogic(bool x, bool y){
 	return !(x || y);
 }
 
-bool notGate(bool x){
+bool notLogic(bool x){
     return !x;
 }

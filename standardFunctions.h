@@ -1,3 +1,9 @@
+/*
+ * Author: CJ Wade
+ * 
+ * Purpose: Standard mathematical operations
+*/
+
 #include <iostream>
 using namespace std;
 
