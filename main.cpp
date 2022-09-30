@@ -8,6 +8,7 @@
 #include "standardFunctions.h"
 #include "logicFunctions.h"
 #include "logicTruthTables.h"
+#include "binaryFunctions.h"
 using namespace std;
 
 // Function for reading decimal numbers.
@@ -118,10 +119,10 @@ int main()
     int z = 0, // First value for switch statement control, initalize with 0 for insurance
     w = 0; // Second value for swithc statement control, initalize with 0 for insurance
 
-    while (z != 7)
+    while (z != 8)
     {
-        cout << "\n---------Menu---------\n| 1.) Addition       |\n| 2.) Subtraction    |\n| 3.) Multiply       |\n| 4.) Division       |\n| 5.) Modulo         |\n| 6.) Logic Sub Menu |\n| 7.) Exit           | "
-             << "\n----------------------" << endl; // Print menu
+        cout << "\n----------Menu-----------\n| 1.) Addition          |\n| 2.) Subtraction       |\n| 3.) Multiply          |\n| 4.) Division          |\n| 5.) Modulo            |\n| 6.) Logic Sub Menu    |\n| 7.) Binary Conversion |\n| 8.) Exit              | "
+             << "\n-------------------------" << endl; // Print menu
         cout << "\nEnter your choice: "; // Promput user for data
         cin >> z; // Read user data
 
@@ -162,7 +163,16 @@ int main()
             logicMenu(boolX, boolY, w);
             break;
         }
-        case 7: // Exit program
+        case 7: // Binary Conversion
+        {
+	        cout << "\nEnter X: ";
+            cin >> x;
+            cout << "\nResult: ";
+            dTB(x);
+            cout << endl;
+            break;
+        }
+        case 8: // Exit program
         {
             cout << "\nExiting program..." << endl
                  << endl;
