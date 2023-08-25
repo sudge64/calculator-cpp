@@ -9,6 +9,7 @@
 #include "logicFunctions.h"
 #include "logicTruthTables.h"
 #include "binaryFunctions.h"
+#include "hexadecimalFunctions.h"
 using namespace std;
 
 // Function for reading decimal numbers.
@@ -168,7 +169,7 @@ int main()
 	        cout << "\nEnter X: ";
             cin >> x;
             cout << "\nResult: ";
-            dTB(x);
+            decimalToBinary(x);
             cout << endl;
             break;
         }

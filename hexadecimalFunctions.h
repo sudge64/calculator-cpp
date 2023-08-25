@@ -1,18 +1,20 @@
 #include <iostream>
+#include "binaryFunctions.h"
 using namespace std;
 
-void decimalToBinary(int n){
-	int binary[32];
+void decimalToHexadecimal(int n){
+	int hexadecimal[32];
 	int i = 0;
 	int j = i - 1;
+	dTB(n);
 	while(n > 0){
-		binary[i] = n % 2;
+		hexadecimal[i] = n % 2;
 		n = n / 2;
 		i++;
 	}
 
 	for(j = i - 1; j >= 0; j--){
-		cout << binary[j];
+		cout << hexadecimal[j];
 		if(j % 4 == 0 && j != 0){
 			cout << " ";
 		}
