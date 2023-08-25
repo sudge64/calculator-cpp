@@ -1,22 +1,24 @@
+#include <ios>
 #include <iostream>
 using namespace std;
 
 void decimalToHexadecimal(int n){
-/*	int hexadecimal[32];
-	int i = 0;
-	int j = i - 1;
-	decimalToHexadecimal(n);
-	while(n > 0){
-		hexadecimal[i] = n % 2;
-		n = n / 2;
-		i++;
-	}
-
-	for(j = i - 1; j >= 0; j--){
-		cout << hexadecimal[j];
-		if(j % 4 == 0 && j != 0){
-			cout << " ";
+	int remainder, product = 1;
+	string hexadecimal = "";
+	char ch;
+	while(n != 0){
+		remainder = n % 16;
+		if(remainder >= 10){
+			ch = remainder + 55;
 		}
-	}*/
-	cout << "Hexadecimal" << endl;
+		else{
+			ch = remainder +48;
+		}
+		hexadecimal += ch;
+
+		n /= 16;
+		product *= 10;
+	}
+	reverse(hexadecimal.begin(), hexadecimal.end());
+	cout << hexadecimal;
 }
