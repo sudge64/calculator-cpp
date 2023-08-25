@@ -122,8 +122,8 @@ int main()
 
     while (z != 8)
     {
-        cout << "\n----------Menu-----------\n| 1.) Addition          |\n| 2.) Subtraction       |\n| 3.) Multiply          |\n| 4.) Division          |\n| 5.) Modulo            |\n| 6.) Logic Sub Menu    |\n| 7.) Binary Conversion |\n| 8.) Exit              | "
-             << "\n-------------------------" << endl; // Print menu
+        cout << "\n-------------Menu-------------\n| 1.) Addition               |\n| 2.) Subtraction            |\n| 3.) Multiply               |\n| 4.) Division               |\n| 5.) Modulo                 |\n| 6.) Logic Sub Menu         |\n| 7.) Binary Conversion      |\n| 8.) Hexadecimal Conversion |\n| 9.) Exit                   | "
+             << "\n------------------------------" << endl; // Print menu
         cout << "\nEnter your choice: "; // Prompt user for data
         cin >> z; // Read user data
 
@@ -166,14 +166,23 @@ int main()
         }
         case 7: // Binary Conversion
         {
-	        cout << "\nEnter X: ";
+	    cout << "\nEnter X: ";
             cin >> x;
             cout << "\nResult: ";
             decimalToBinary(x);
             cout << endl;
             break;
         }
-        case 8: // Exit program
+        case 8: // Hexadecimal Conversion
+        {
+            cout << "\nEnter X: ";
+            cin >> x;
+            cout << "\nResult: ";
+            decimalToHexadecimal(x);
+            cout << endl;
+            break;
+        }
+        case 9: // Exit program
         {
             cout << "\nExiting program..." << endl
                  << endl;

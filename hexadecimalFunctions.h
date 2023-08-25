@@ -1,12 +1,11 @@
 #include <iostream>
-#include "binaryFunctions.h"
 using namespace std;
 
 void decimalToHexadecimal(int n){
-	int hexadecimal[32];
+/*	int hexadecimal[32];
 	int i = 0;
 	int j = i - 1;
-	dTB(n);
+	decimalToHexadecimal(n);
 	while(n > 0){
 		hexadecimal[i] = n % 2;
 		n = n / 2;
@@ -18,5 +17,6 @@ void decimalToHexadecimal(int n){
 		if(j % 4 == 0 && j != 0){
 			cout << " ";
 		}
-	}
+	}*/
+	cout << "Hexadecimal" << endl;
 }
