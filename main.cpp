@@ -120,7 +120,7 @@ int main()
     int z = 0, // First value for switch statement control, initalize with 0 for insurance
     w = 0; // Second value for switch statement control, initalize with 0 for insurance
 
-    while (z != 8)
+    while (z != 9)
     {
         cout << "\n-------------Menu-------------\n| 1.) Addition               |\n| 2.) Subtraction            |\n| 3.) Multiply               |\n| 4.) Division               |\n| 5.) Modulo                 |\n| 6.) Logic Sub Menu         |\n| 7.) Binary Conversion      |\n| 8.) Hexadecimal Conversion |\n| 9.) Exit                   | "
              << "\n------------------------------" << endl; // Print menu
